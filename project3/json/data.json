@@ -1,0 +1,18 @@
+{
+    "easy": [
+        {
+            "q": "What is the layer that protects the Earth from Harmful Rays?",
+            "a1": "O-zone Layer",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": "O-zone Layer" 
+        }
+    ],
+    "medium": [
+        {}
+    ],
+    "hard": [
+        {}
+    ]
+}
