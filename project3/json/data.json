@@ -3,14 +3,37 @@
         {
             "q": "What is the layer that protects the Earth from Harmful Rays?",
             "a1": "O-zone Layer",
+            "a2": "Mesosphere",
+            "a3": "Troposphere",
+            "a4": "D-Zone Layer",
+            "correct": "O-zone Layer"
+        },
+        {
+            "q": "",
+            "a1": "",
             "a2": "",
             "a3": "",
             "a4": "",
-            "correct": "O-zone Layer" 
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
         }
     ],
     "medium": [
-        {}
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        }
     ],
     "hard": [
         {}
