@@ -9,7 +9,10 @@ let diff = '../json/data.json';
 let qNum = 0;
 let interval;
 //Grab all our elements from HTML page
-//timer, score, question
+//home,restart,timer, score, question
+let home=document.getElementById('home');
+let restart=document.getElementById('restart');
+
 
 let correct = document.getElementById('correct');
 let counter = document.getElementById('counter');
@@ -35,6 +38,8 @@ for (let i = 0; i < buttons.length; i++) {
     });
 }
 
+
+
 //Create our JSON data load
 function loadJSON(url) {
     let xhttp = new XMLHttpRequest();
@@ -56,6 +61,16 @@ function loadJSON(url) {
     xhttp.send();
 
 }
+
+restart.addEventListener('click', function (e) {
+//----------restart the same difficulty--------//
+})
+
+
+home.addEventListener('click', function(e){
+
+})
+
 // ----------------------------//
 function loadQuestion() {
     //Load the next question

@@ -5,8 +5,384 @@
             "a1": "O-zone Layer",
             "a2": "Mesosphere",
             "a3": "Troposphere",
-            "a4": "D-Zone Layer",
+            "a4": "D-zone Layer",
             "correct": "O-zone Layer"
+        },
+        {
+            "q": "Which planet is closest to the sun?",
+            "a1": "Mercury",
+            "a2": "Venus",
+            "a3": "Pluto",
+            "a4": "Mars",
+            "correct": "Mercury"
+        },
+        {
+            "q": "In the list of planets, at what number is Earth?",
+            "a1": "First",
+            "a2": "Second",
+            "a3": "Third",
+            "a4": "Fourth",
+            "correct": "Third"
+        },
+        {
+            "q": "How many bones are there in the human body?",
+            "a1": "206",
+            "a2": "207",
+            "a3": "205",
+            "a4": "204",
+            "correct": "206"
+        },
+        {
+            "q": "What do bees use to make honey?",
+            "a1": "Pollon",
+            "a2": "Nectar",
+            "a3": "Photosynthesis",
+            "a4": "Grass",
+            "correct": "Nectar"
+        },
+        {
+            "q": "What species can live on both water and land?",
+            "a1": "Amphibians",
+            "a2": "Namibian",
+            "a3": "Chameleon",
+            "a4": "Oblivion",
+            "correct": "Amphibians"
+        },
+        {
+            "q": "What is not found in a shark?",
+            "a1": "Bones",
+            "a2": "Gills",
+            "a3": "Stomach",
+            "a4": "Organs",
+            "correct": "Bones"
+        },
+        {
+            "q": "Clouds are made of what?",
+            "a1": "Water",
+            "a2": "Cotton Candy",
+            "a3": "Carbon Dioxide",
+            "a4": "Steam",
+            "correct": "Water"
+        },
+        {
+            "q": "Approximately how many days does it take our moon to circle the Earth?",
+            "a1": "30 Days",
+            "a2": "90 Days",
+            "a3": "180 Days",
+            "a4": "365 Days",
+            "correct": "30 Days"
+        },
+        {
+            "q": "Animals without backbones are known as?",
+            "a1": "Invertebrates",
+            "a2": "Spineless",
+            "a3": "Primates",
+            "a4": "Delegates",
+            "correct": "Invertebrates"
+        },
+        {
+            "q": "Name of a person who studies plants?",
+            "a1": "Botanist",
+            "a2": "Flourist",
+            "a3": "Herbologist",
+            "a4": "Flowerist",
+            "correct": "Botanist"
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
+        },
+        {
+            "q": "",
+            "a1": "",
+            "a2": "",
+            "a3": "",
+            "a4": "",
+            "correct": ""
         },
         {
             "q": "",
@@ -24,6 +400,7 @@
             "a4": "",
             "correct": ""
         }
+
     ],
     "medium": [
         {
