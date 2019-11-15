@@ -22,26 +22,22 @@ function loadHTML(url) {
         if (this.readyState == 4 && this.status == 200) {
 
             let myArr = this.responseText;
-            console.log(myArr);
-
-            counter.innerText = timer;
-            interval = setInterval(updateTime, 1000);
 
             //kicks off the game
             if (url == "../html/gameBegin.html") {
                 injectBegin(myArr);
 
             }
-            else if (url == "../html/gameDisplay.html" && difficulty==1) {
+            else if (url == "../html/gameDisplay.html" && difficulty == 1) {
                 loadTrivia(myArr, easyArr);
 
             }
-            else if (url == "../html/gameDisplay.html" && difficulty==2) {
+            else if (url == "../html/gameDisplay.html" && difficulty == 2) {
                 loadTrivia(myArr, mediumArr);
 
             }
             else if (url == "../html/gameEnd.html") {
-
+                injectEnd(myArr);
 
             }
             else if (url == "../html/gameOptions.html") {
@@ -54,8 +50,8 @@ function loadHTML(url) {
     xhttp.send();
 
 }
-let easyArr=[];
-let mediumArr=[];
+let easyArr = [];
+let mediumArr = [];
 function loadJSON(url) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -77,6 +73,7 @@ function injectBegin(info) {
     let mediumBtn = document.getElementById('medium');
     //let hard = document.getElementById('hard');
 
+
     easyBtn.addEventListener('click', function (e) {
         //select set of questions
         difficulty = 1;
@@ -84,17 +81,19 @@ function injectBegin(info) {
     })
     mediumBtn.addEventListener('click', function (e) {
         difficulty = 2;
-        loadHTML("../html/gameDisplay2.html");
+        loadHTML("../html/gameDisplay.html");
     })
 }
+
+
 
 let totalScore = 0;
 // -----------Functions-----------------//
 function loadTrivia(info, arr) {
-    display.innerHTML=info
-    //Trivia Variables
+    display.innerHTML = info;
+    //Trivia variables
     let totalQuestions = 20;
-    let timer = 5;
+    let timer = 15;
     let tQuestions = [];
     let qNum = 0;
     let interval;
@@ -102,6 +101,8 @@ function loadTrivia(info, arr) {
     let correct = document.getElementById('correct');
     let counter = document.getElementById('counter');
     let questions = document.getElementById('questions');
+    counter.innerText = timer;
+    interval = setInterval(updateTime, 1000);
 
     //Question & Answer Elements
     let a1 = document.getElementById('a1');
@@ -114,6 +115,8 @@ function loadTrivia(info, arr) {
     a2.innerText = tQuestions[qNum].a2;
     a3.innerText = tQuestions[qNum].a3;
     a4.innerText = tQuestions[qNum].a4;
+
+    
 
     function checkAnswer(answer) {
 
