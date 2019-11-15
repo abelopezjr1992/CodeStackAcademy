@@ -1,28 +1,24 @@
-
-
-//Grab all our elements from HTML page:home,restart,timer, score, question
 let home = document.getElementById('home');
 let restart = document.getElementById('restart');
+let display = document.getElementById('display');
+
+let difficulty = 0;
+
 home.addEventListener('click', function (e) {
     loadHTML("../html/gameBegin.html");
 })
+
 restart.addEventListener('click', function (e) {
     //----------restart the same difficulty--------//
     loadHTML("../html/gameDisplay.html");
 })
 
 //This is the location to inject HTML
-let display = document.getElementById('display');
-let difficulty = 0;
-
-//Create our JSON data load
 function loadHTML(url) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-
             let myArr = this.responseText;
-
             //kicks off the game
             if (url == "../html/gameBegin.html") {
                 injectBegin(myArr);
@@ -37,21 +33,21 @@ function loadHTML(url) {
 
             }
             else if (url == "../html/gameEnd.html") {
-                injectEnd(myArr);
-
+//hOW TO SETUP END GAME
             }
             else if (url == "../html/gameOptions.html") {
-
+                injectBegin(myArr);
             }
 
         }
     };
     xhttp.open("GET", url, true);
     xhttp.send();
-
 }
+
 let easyArr = [];
 let mediumArr = [];
+
 function loadJSON(url) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -71,6 +67,7 @@ function injectBegin(info) {
     //Select Difficulty
     let easyBtn = document.getElementById('easy');
     let mediumBtn = document.getElementById('medium');
+    let rulesBtn = document.getElementById('rules');
     //let hard = document.getElementById('hard');
 
 
@@ -82,6 +79,9 @@ function injectBegin(info) {
     mediumBtn.addEventListener('click', function (e) {
         difficulty = 2;
         loadHTML("../html/gameDisplay.html");
+    })
+    rulesBtn.addEventListener('click', function (e) {
+        loadHTML("../html/gameOptions.html")
     })
 }
 
@@ -98,6 +98,7 @@ function loadTrivia(info, arr) {
     let qNum = 0;
     let interval;
 
+    randomNum(arr);
     let correct = document.getElementById('correct');
     let counter = document.getElementById('counter');
     let questions = document.getElementById('questions');
@@ -116,18 +117,15 @@ function loadTrivia(info, arr) {
     a3.innerText = tQuestions[qNum].a3;
     a4.innerText = tQuestions[qNum].a4;
 
-    
-
     function checkAnswer(answer) {
 
         if (answer === tQuestions[qNum].correct) {
             totalScore++;
+            corect++;
         }
-        else {
-            incorrect++;
-        }
+        
         correct.innerText = `${totalScore}/${totalQuestions}`;
-        timer = 5;
+        timer = 15;
         counter.innerText = timer;
 
         //Go to next question
@@ -138,11 +136,11 @@ function loadTrivia(info, arr) {
     function nextQuestion() {
         //Prep to go to next question
 
-        //loadQuestion
+        
         if (qNum <= totalQuestions) {
             //will run until you hit total qustions=20;
             qNum++;
-            loadQuestion();
+            
         }
         else {
             //Load up Ending screen
@@ -156,13 +154,22 @@ function loadTrivia(info, arr) {
         //Make sure our time isn't over and it is showing correct time.
         timer--;
         if (timer == 0) {
-            timer = 5;
+            timer = 15;
             counter.innerText = timer;
             nextQuestion();
         }
         else {
             counter.innerText = timer;
         }
+    }
+    //Random number Generator
+    function randomNum(q) {
+        for (let i = 0; i < totalQuestions; i++) {
+            let rNum = Math.floor(Math.random()*q.length);
+            tQuestions.push(q[rNum]);
+            q.splice(rNum,1);
+        }
+        //console.log(tQuestions);
     }
 }
 
