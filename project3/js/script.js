@@ -1,8 +1,8 @@
 //Declare our Variables
 let totalScore = 0;
 let totalQuestions = 20;
-let incorrect=0;
-let timer=5;
+let incorrect = 0;
+let timer = 5;
 let tQuestions = [];
 let diff = '../json/data.json';
 
@@ -10,17 +10,14 @@ let qNum = 0;
 let interval;
 //Grab all our elements from HTML page
 //home,restart,timer, score, question
-let home=document.getElementById('home');
-let restart=document.getElementById('restart');
+let home = document.getElementById('home');
+let restart = document.getElementById('restart');
 
 //Select Difficulty
-let easy=document.getElementById('easy');
+let easy = document.getElementById('easy');
+let medium = document.getElementById('medium');
+let hard = document.getElementById('hard');
 
-//function to inject Easy game information and start game
-
-
-let medium=document.getElementById('medium');
-let hard=document.getElementById('hard');
 
 let correct = document.getElementById('correct');
 let counter = document.getElementById('counter');
@@ -53,14 +50,12 @@ function loadJSON(url) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            //.easyQ to select an array inside the array
-            //let myArr=Json.parse(this.responseText);
-            tQuestions = JSON.parse(this.responseText).easy;
-            console.log(tQuestions);
-            counter.innerText=timer;
 
-            interval=setInterval(updateTime,1000);
+            counter.innerText = timer;
+
+
             //kicks off the game
+            interval = setInterval(updateTime, 1000);
             loadQuestion();
 
         }
@@ -71,12 +66,26 @@ function loadJSON(url) {
 }
 
 restart.addEventListener('click', function (e) {
-//----------restart the same difficulty--------//
+    //----------restart the same difficulty--------//
 })
 
 
-home.addEventListener('click', function(e){
+home.addEventListener('click', function (e) {
 
+})
+
+easy.addEventListener('click', function (e) {
+    //.easyQ to select an array inside the array
+    //let myArr=Json.parse(this.responseText);
+    tQuestions = JSON.parse(this.responseText).easy;
+    console.log(tQuestions);
+})
+
+medium.addEventListener('click', function (e) {
+    //.easyQ to select an array inside the array
+    //let myArr=Json.parse(this.responseText);
+    tQuestions = JSON.parse(this.responseText).medium;
+    console.log(tQuestions);
 })
 
 // ----------------------------//
@@ -89,22 +98,21 @@ function loadQuestion() {
     a4.innerText = tQuestions[qNum].a4;
     //For loop in buttons
 
-
 }
 
 function checkAnswer(answer) {
     //Retrieves the answer and see if it is correct
     //Increment you correct number
 
-    if (answer === tQuestions[qNum].correct){
+    if (answer === tQuestions[qNum].correct) {
         totalScore++;
     }
-    else{
+    else {
         incorrect++;
     }
-    correct.innerText=`${totalScore}/${totalQuestions}`;
-    timer=5;
-    counter.innerText =timer;
+    correct.innerText = `${totalScore}/${totalQuestions}`;
+    timer = 5;
+    counter.innerText = timer;
 
     //Go to next question
     nextQuestion();
@@ -112,16 +120,16 @@ function checkAnswer(answer) {
 }
 
 //Next Question
-function nextQuestion(){
+function nextQuestion() {
     //Prep to go to next question
-    
+
     //loadQuestion
-    if(qNum<=totalQuestions){
+    if (qNum <= totalQuestions) {
         //will run until you hit total qustions=20;
         qNum++;
         loadQuestion();
     }
-    else{
+    else {
         //Load up Ending screen
         //Clears interval for timer
         clearInterval(interval);
@@ -129,17 +137,17 @@ function nextQuestion(){
     }
 }
 // Set our Timer
-function updateTime(){
+function updateTime() {
     //Make sure our time isn't over and it is showing correct time.
 
     timer--;
-    if (timer==0){
-        timer=5;
-        counter.innerText =timer;
+    if (timer == 0) {
+        timer = 5;
+        counter.innerText = timer;
         nextQuestion();
     }
-    else{
-        counter.innerText=timer;
+    else {
+        counter.innerText = timer;
     }
 }
 

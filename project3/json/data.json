@@ -89,316 +89,316 @@
             "correct": "Botanist"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
+            "q": "Name of person who studies animals?",
+            "a1": "Zoologist",
+            "a2": "Animalist",
+            "a3": "Animelist",
+            "a4": "Animalogist",
+            "correct": "Zoologist"
+        },
+        {
+            "q": "What is the sum of angles of a triangle?",
+            "a1": "180",
+            "a2": "90",
+            "a3": "360",
+            "a4": "480",
+            "correct": "180"
+        },
+        {
+            "q": "What blood type do you need to be a universal donor?",
+            "a1": "O-",
+            "a2": "O+",
+            "a3": "AB",
+            "a4": "A+",
+            "correct": "O-"
+        },
+        {
+            "q": "What is a group of whales called?",
+            "a1": "A pod",
+            "a2": "A collage",
+            "a3": "A cluster",
+            "a4": "A pack",
+            "correct": "A pod"
+        },
+        {
+            "q": "What is a group of porcupines called?",
+            "a1": "A prickle",
+            "a2": "A pack",
+            "a3": "A set",
+            "a4": "A hurdle",
             "correct": ""
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
+            "q": "What planet is second from the sun?",
+            "a1": "Venus",
+            "a2": "Pluto",
+            "a3": "Earth",
+            "a4": "Mars",
+            "correct": "Venus"
+        },
+        {
+            "q": "How much of a jelly fish is water?",
+            "a1": "95%",
+            "a2": "80%",
+            "a3": "99%",
+            "a4": "85%",
             "correct": ""
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Who came up with the three laws of motion?",
+            "a1": "Nikola Tesla",
+            "a2": "Albert Einstein",
+            "a3": "Isaac Newton",
+            "a4": "Galileo Galilei",
+            "correct": "Isaac Newton"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "How many breaths does the average human take in a day?",
+            "a1": "23,000",
+            "a2": "25,000",
+            "a3": "28,000",
+            "a4": "35,000",
+            "correct": "23,000"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "How long does it take for the Earth to spin once on its axis?",
+            "a1": "1 day",
+            "a2": "7 days",
+            "a3": "30 days",
+            "a4": "365 days",
+            "correct": "1 day"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What survives impacting Earth’s surface?",
+            "a1": "A meteor",
+            "a2": "A meteorite",
+            "a3": "An asteroid",
+            "a4": "A comet",
+            "correct": "A meteorite"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "How far is the moon away from Earth?",
+            "a1": "1,380,500 km",
+            "a2": "580,700 km",
+            "a3": "376,600 km",
+            "a4": "120,600",
+            "correct": "376,600 km"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which animal lays eggs?",
+            "a1": "Dog",
+            "a2": "Cat",
+            "a3": "Duck",
+            "a4": "Sheep",
+            "correct": "Duck"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What is Earth’s only natural satellite?",
+            "a1": "The Sun",
+            "a2": "Mars",
+            "a3": "Venus",
+            "a4": "The Moon",
+            "correct": "The Moon"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Who invented the first functional telephone?",
+            "a1": "Albert Einstein",
+            "a2": "Nikola Tesla",
+            "a3": "Thomas Alva Edison",
+            "a4": "Alexander Graham Bell",
+            "correct": "Alexander Graham Bell"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "For every action, there is an equal and opposite reaction. It is which of Newton’s law of motion?",
+            "a1": "First Law",
+            "a2": "Second Law",
+            "a3": "Third Law",
+            "a4": "Fourth Law",
+            "correct": "Third Law"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Diabetes happens because of problems in which organ of the body?",
+            "a1": "Liver",
+            "a2": "Heart",
+            "a3": "Pancreas",
+            "a4": "Kidneys",
+            "correct": "Pancreas"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Sweet potato is an example of a modified _____.",
+            "a1": "Leaf",
+            "a2": "Root",
+            "a3": "Stem",
+            "a4": "Branch",
+            "correct": "Root"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which is the lightest element in the periodic table?",
+            "a1": "Helium",
+            "a2": "Carbon",
+            "a3": "Nitrogen",
+            "a4": "Hydrogen",
+            "correct": "Hydrogen"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What elements are the most common in the human body?",
+            "a1": "Sulfur, sodium, magnesium",
+            "a2": "Phosphorus, nitrogen, calcium",
+            "a3": "Copper, zinc, selenium",
+            "a4": "Oxygen, carbon, hydrogen",
+            "correct": "Oxygen, carbon, hydrogen"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What are animals, which eat both plants and animals, called?",
+            "a1": "Herbivores",
+            "a2": "Insectivores",
+            "a3": "Carnivores",
+            "a4": "Omnivores",
+            "correct": "Omnivores"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which biologist proposed the theory of evolution through natural selection?",
+            "a1": "Charles Darwin",
+            "a2": "Stephen Hawking",
+            "a3": "Francesco Redi",
+            "a4": "Alexander Fleming",
+            "correct": "Charles Darwin"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "The standard unit of measurement for energy is ____",
+            "a1": "Newton",
+            "a2": "Ampere",
+            "a3": "Watt",
+            "a4": "Joule",
+            "correct": "Joule"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which is the largest animal on earth?",
+            "a1": "Shark",
+            "a2": "Elephant",
+            "a3": "Blue Whale",
+            "a4": "Giraffe",
+            "correct": "Blue Whale"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which system of the body controls the senses?",
+            "a1": "Circulatory system",
+            "a2": "Digestive system",
+            "a3": "Nervous system",
+            "a4": "Skeletal system",
+            "correct": "Nervous system"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "The outward force, away from the center, felt by an object in circular motion is ___.",
+            "a1": "Circular force",
+            "a2": "Centripetal force",
+            "a3": "Centrifugal forces",
+            "a4": "Elastic force",
+            "correct": "Centrifugal forces"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What type of energy eventually depletes?",
+            "a1": "Kinetic energy",
+            "a2": "Non-renewable energy",
+            "a3": "Gravitational energy",
+            "a4": "Renewable energy",
+            "correct": "Non-renewable energy"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "A single piece of coiled DNA is called ____.",
+            "a1": "Nucleus",
+            "a2": "Ribosome",
+            "a3": "Cytoplasm",
+            "a4": "Chromosome",
+            "correct": "Chromosome"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Yeast is a type of ____.",
+            "a1": "Plant",
+            "a2": "Animal",
+            "a3": "Bacterium",
+            "a4": "Fungus",
+            "correct": "Fungus"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which part of the cell is also called powerhouse?",
+            "a1": "Ribosome",
+            "a2": "Endoplasmic reticulum",
+            "a3": "Cytoplasm",
+            "a4": "Mitochondria",
+            "correct": "Mitochondria"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "The bending of light through a glass prism is called ____.",
+            "a1": "Reflection",
+            "a2": "Refraction",
+            "a3": "Diffraction",
+            "a4": "Absorption",
+            "correct": "Refraction"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What comet was first sighted by the Chinese in 240 B.C.?",
+            "a1": "Hale-Bopp",
+            "a2": "Halley's Comet.",
+            "a3": "Shoemaker-Levy9",
+            "a4": "Encke",
+            "correct": "Halley's Comet."
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What is the largest planet in the solar system?",
+            "a1": "Neptune",
+            "a2": "Jupiter",
+            "a3": "Plut",
+            "a4": "Uranus",
+            "correct": "Jupiter"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What part of the plant conducts photosyntehsis?",
+            "a1": "The Leaf",
+            "a2": "The Stem",
+            "a3": "The Bud",
+            "a4": "The Root",
+            "correct": "The Leaf"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "How long does a human red blood cell survive?",
+            "a1": "120 Days",
+            "a2": "180 Days",
+            "a3": "30 Days",
+            "a4": "365 Days",
+            "correct": "120 Days"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What was the name of the landmass all continets came from?",
+            "a1": "Pangea",
+            "a2": "Pancreas",
+            "a3": "Atlantis",
+            "a4": "Pangaea",
+            "correct": "Pangaea"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "How many hearts does an octopus have?",
+            "a1": "3",
+            "a2": "1",
+            "a3": "2",
+            "a4": "4",
+            "correct": "3"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "Which of the following is used in pencils?",
+            "a1": "Graphite",
+            "a2": "Silicon",
+            "a3": "Charcoal",
+            "a4": "Phosphorous",
+            "correct": "Graphite"
         },
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
-        },
-        {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
-        },
-        {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
-        },
-        {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
-        },
-        {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
-        },
-        {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "The gas usually filled in the electric bulb is",
+            "a1": "Nitrogen",
+            "a2": "Hydrogen",
+            "a3": "Carbon Dioxide",
+            "a4": "Oxygen",
+            "correct": "Nitrogen"
         }
 
     ],
