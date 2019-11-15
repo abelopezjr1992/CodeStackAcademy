@@ -13,6 +13,14 @@ let interval;
 let home=document.getElementById('home');
 let restart=document.getElementById('restart');
 
+//Select Difficulty
+let easy=document.getElementById('easy');
+
+//function to inject Easy game information and start game
+
+
+let medium=document.getElementById('medium');
+let hard=document.getElementById('hard');
 
 let correct = document.getElementById('correct');
 let counter = document.getElementById('counter');
