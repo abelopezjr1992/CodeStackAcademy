@@ -399,21 +399,521 @@
             "a3": "Carbon Dioxide",
             "a4": "Oxygen",
             "correct": "Nitrogen"
+        },
+        {
+            "q": "At room temperature, most elements are in which phase of matter?",
+            "a1": "Solid",
+            "a2": "Liquid",
+            "a3": "Gas",
+            "a4": "Plasma",
+            "correct": "Solid"
+        },
+        {
+            "q": "The science of weights and measures is called:",
+            "a1": "Metrology",
+            "a2": "Meteorology",
+            "a3": "Mineralogy",
+            "a4": "Morphology",
+            "correct": "Metrology"
+        },
+        {
+            "q": "If a metal can be drawn into wires relatively easily it is called:",
+            "a1": "Malleable",
+            "a2": "Ductile",
+            "a3": "Extractive",
+            "a4": "Tactile",
+            "correct": "Ductile"
+        },
+        {
+            "q": " The Statue of Liberty is green because of:",
+            "a1": "green stone",
+            "a2": "oxidized brass",
+            "a3": "steel painted green",
+            "a4": "oxidized copper",
+            "correct": "oxidized copper"
+        },
+        {
+            "q": "Which of the following vacuum pumps operates by using a very cold surface to trap the gases on the cold surface? Is it a",
+            "a1": "sublimation pump",
+            "a2": "turbo pump",
+            "a3": "cryopump",
+            "a4": "diffusion pump.",
+            "correct": "cryopump"
+        },
+        {
+            "q": "The word atom is from a Greek word meaning:",
+            "a1": "small",
+            "a2": "indivisible",
+            "a3": "unseen",
+            "a4": "visible",
+            "correct": "indivisible"
+        },
+        {
+            "q": "Electric power is less expensive at night because:",
+            "a1": "more hydroelectric generation is brought on line at night.",
+            "a2": "there is less demand at night.",
+            "a3": "pollution control is less stringent at night.",
+            "a4": "power plants are more efficient at night.",
+            "correct": "there is less demand at night."
+        },
+        {
+            "q": "What famous scientist and inventor participated in the invention of the Aqua-Lung?",
+            "a1": "Thomas Edison",
+            "a2": "Isaac Newton",
+            "a3": "Leonardo da Vinci",
+            "a4": "Jacques Cousteau",
+            "correct": "Jacques Cousteau"
+        },
+        {
+            "q": "The study of how people use tools to perform work and how people physically relate to their working environment is called:",
+            "a1": "engineering",
+            "a2": "ergonomics",
+            "a3": "agronomy",
+            "a4": "physiology",
+            "correct": "ergonomics"
+        },
+        {
+            "q": "The study of phenomena at very low temperatures is called:",
+            "a1": "heat transfer",
+            "a2": "morphology",
+            "a3": "crystallography",
+            "a4": "cryogenics",
+            "correct": "cryogenics"
         }
-
     ],
     "medium": [
         {
-            "q": "",
-            "a1": "",
-            "a2": "",
-            "a3": "",
-            "a4": "",
-            "correct": ""
+            "q": "What weather phenomenon causes more deaths in the U.S. annually than any other except lightning?",
+            "a1": "Tornadoes",
+            "a2": "Earthquakes",
+            "a3": "Thunderstorms",
+            "a4": "Tsunamis",
+            "correct": "Tornadoes"
+        },
+        {
+            "q": "What planet’s moons are nearly all named after Shakespearean characters?",
+            "a1": "Uranus",
+            "a2": "Neptune",
+            "a3": "Pluto",
+            "a4": "Mars",
+            "correct": "Uranus"
+        },
+        {
+            "q": "Stratus, Cirrus & Cumulus are names for different types of what?",
+            "a1": "Events",
+            "a2": "Clouds",
+            "a3": "Animals",
+            "a4": "Atmosphere layers",
+            "correct": "Clouds"
+        },
+        {
+            "q": "Which planet in our solar system are not named after a god or goddess?",
+            "a1": "Earth",
+            "a2": "Mars",
+            "a3": "Venus",
+            "a4": "Pluto",
+            "correct": "Earth"
+        },
+        {
+            "q": "What type of number has no factors other than 1 and itself?",
+            "a1": "Even Numbers",
+            "a2": "Odd Numbers",
+            "a3": "Casual Numbers",
+            "a4": "Prime numbers",
+            "correct": "Prime numbers"
+        },
+        {
+            "q": "A modulator-demodulator is a hardware device better known as what?",
+            "a1": "Cable Box",
+            "a2": "Cell Phone",
+            "a3": "Modem",
+            "a4": "Energy Supply",
+            "correct": "Modem"
+        },
+        {
+            "q": "When there are two full moons in the same month, what is the second one called?",
+            "a1": "Blue Moon",
+            "a2": "Blood Moon",
+            "a3": "Double Moon",
+            "a4": "Re-Moon",
+            "correct": "Blue Moon"
+        },
+        {
+            "q": "What is the term for the speed that a rocket needs to be traveling to break free of Earth’s gravity?",
+            "a1": "Breaking Point",
+            "a2": "Escape Velocity",
+            "a3": "Escaping Oribit",
+            "a4": "Break Point",
+            "correct": "Escape Velocity"
+        },
+        {
+            "q": "What is the primary unit of temperature measurement in the physical sciences?",
+            "a1": "Heat",
+            "a2": "Celsius",
+            "a3": "Kelvin",
+            "a4": "Fahrenheit",
+            "correct": "Kelvin"
+        },
+        {
+            "q": "On the Periodic Table of Elements, Hg is the symbol for what element?",
+            "a1": "Mercury",
+            "a2": "Gold",
+            "a3": "Helium",
+            "a4": "Iron",
+            "correct": "Mercury"
+        },
+        {
+            "q": "What is the only modern rock n’ roll song on the Voyager Spacecrafts’ Golden Records?",
+            "a1": "Johnny B. Goode, by Chuck Berry",
+            "a2": "Bye bye Love, by The Everly Brothers",
+            "a3": "Baby Let's Play House, by Elvis Presley",
+            "a4": "Splish Splash, by Duane Eddy",
+            "correct": "Johnny B. Goode, by Chuck Berry"
+        },{
+            "q": "In the human body, what is the hallux?",
+            "a1": "The big toe",
+            "a2": "The Hip",
+            "a3": "The kneecap",
+            "a4": "The neck",
+            "correct": "The big toe"
+        },{
+            "q": "What is the most abundant chemical element in the Universe?",
+            "a1": "Helium",
+            "a2": "Hydrogen",
+            "a3": "Carbon",
+            "a4": "Gold",
+            "correct": "Hydrogen"
+        },{
+            "q": "A temperature reading of -459.67 degrees Fahrenheit or -273.15 degrees Celsius, is known as what?",
+            "a1": "Absolute Zero",
+            "a2": "Off the scale",
+            "a3": "Freezing Point",
+            "a4": "A normal day",
+            "correct": "Absolute Zero"
+        },{
+            "q": "The change in a wave’s frequency when the source and observer are in motion relative to one another is known as what?",
+            "a1": "The Doppler Effect",
+            "a2": "Change in Motion",
+            "a3": "Perspective",
+            "a4": "Point of view",
+            "correct": "The Doppler Effect"
+        },{
+            "q": "Who invented the first alternating current (AC) induction motor?",
+            "a1": "Elon Reeve Musk",
+            "a2": "Albert Einstein",
+            "a3": "Nikola Tesla",
+            "a4": "Benjamin Franklin",
+            "correct": "Nikola Tesla"
+        },{
+            "q": "The process of making cow’s milk safe for human consumption is called what?",
+            "a1": "Processing",
+            "a2": "Maturation",
+            "a3": "Pasteurization",
+            "a4": "Fertilization",
+            "correct": "Pasteurization"
+        },{
+            "q": "The scientific unit named after Sir Isaac Newton measures what?",
+            "a1": "Force",
+            "a2": "Newton",
+            "a3": "Joule",
+            "a4": "Mass",
+            "correct": "Force"
+        },{
+            "q": "How many electrons does a hydrogen atom have?",
+            "a1": "One",
+            "a2": "Two",
+            "a3": "Three",
+            "a4": "Four",
+            "correct": "One"
+        },{
+            "q": "What is the mathematical formula for Newton’s Second Law of Motion?",
+            "a1": "d=√(x₁ – x₂)² + (y₁ – y₂)²",
+            "a2": "x = −b ± √b²-4ac/2a",
+            "a3": "E=MC²",
+            "a4": "F=ma",
+            "correct": "F=ma"
+        },{
+            "q": "What are the first four digits of Pi?",
+            "a1": "3.141",
+            "a2": "3.142",
+            "a3": "3.192",
+            "a4": "3.154",
+            "correct": "3.141"
+        },{
+            "q": "Where did a robot named Spirit remain operational over 2000 sols past its planned 90-sol mission?",
+            "a1": "Mars",
+            "a2": "Venus",
+            "a3": "Outside the MilkyWay",
+            "a4": "Mercury",
+            "correct": "Mars"
+        },{
+            "q": "What is the name for the pigment found in your skin and hair that gives them color?",
+            "a1": "Melanin",
+            "a2": "Oxygen",
+            "a3": "Venison",
+            "a4": "Adrenaline",
+            "correct": "Melanin"
+        },{
+            "q": "What is the only state that can be typed on one row of keys on a QWERTY keyboard?",
+            "a1": "New York",
+            "a2": "Alaska",
+            "a3": "Canada",
+            "a4": "Wisconsin",
+            "correct": "Alaska"
+        },{
+            "q": "What does the online acronym SMH stand for?",
+            "a1": "Send More Humor",
+            "a2": "Shaking My Head",
+            "a3": "Smile More Honey",
+            "a4": "Shake My Hips",
+            "correct": "Shaking My Head"
+        },{
+            "q": "When referring to cables used to transmit audio/video, what does HDMI stand for?",
+            "a1": "Hot Dam MY 'I's",
+            "a2": "High-Dynamic Media Interface ",
+            "a3": "High-Definition Multimedia Interface",
+            "a4": "Hyper-Dynamic Media Interface",
+            "correct": "High-Definition Multimedia Interface"
+        },{
+            "q": "Able to be seen from outer space, what is Earth’s largest living structure?",
+            "a1": "The Egyptian Pyramids",
+            "a2": "Eiffel Tower",
+            "a3": "The Great Wall of China",
+            "a4": "The Great Barrier Reef",
+            "correct": "The Great Barrier Reef"
+        },{
+            "q": "What common expression is used to refer to the horseshoe shaped zone found along the Pacific rim where approximately 90% of the world’s earthquakes occur?",
+            "a1": "Horse's hoof",
+            "a2": "The Ring of Fire",
+            "a3": "The Great Ring",
+            "a4": "The plate",
+            "correct": "The Ring of Fire"
+        },{
+            "q": "What was the name of the first manned mission to land on the moon?",
+            "a1": "Apollo 13",
+            "a2": "Apollo 9",
+            "a3": "Apollo 1",
+            "a4": "Apollo 11",
+            "correct": "Apollo 11"
+        },{
+            "q": "What is the name for the branch of mathematics dealing with lengths and angles of triangles.",
+            "a1": "Trigonometry",
+            "a2": "Geometry",
+            "a3": "Arithmatic",
+            "a4": "Topology",
+            "correct": "Trigonometry"
+        },{
+            "q": "Which U.S. President made the first telephone call to the moon?",
+            "a1": "George Washington",
+            "a2": "Richard Nixon",
+            "a3": "George W. Bush",
+            "a4": "Gerald Ford",
+            "correct": "Richard Nixon"
+        },{
+            "q": "What is the name for the longest side of a right triangle?",
+            "a1": "Width",
+            "a2": "Hypotenuse",
+            "a3": "C",
+            "a4": "Height",
+            "correct": "Hypotenuse"
+        },{
+            "q": "What common kitchen item is made up of sodium and chlorine atoms?",
+            "a1": "Pepper",
+            "a2": "Salt",
+            "a3": "Sugar",
+            "a4": "Ketchup",
+            "correct": "Salt"
+        },{
+            "q": "In geometry, how many sides are on a heptagon?",
+            "a1": "Six",
+            "a2": "Seven",
+            "a3": "Eight",
+            "a4": "Nine",
+            "correct": "Seven"
+        },{
+            "q": "What is the name for the specialized nerve cell that transmits information chemically and electrically throughout the body?",
+            "a1": "Sensitivity",
+            "a2": "Neuron",
+            "a3": "Nervous System",
+            "a4": "Involentary reaction",
+            "correct": "Neuron"
+        },{
+            "q": "What was the name given to the sheep that was the first mammal cloned from an adult cell?",
+            "a1": "Molly",
+            "a2": "Dolly",
+            "a3": "John",
+            "a4": "Jon",
+            "correct": "Dolly"
+        },{
+            "q": "The Great Red Spot is a gigantic storm located on which planet in our solar system?",
+            "a1": "Neptune",
+            "a2": "Jupiter",
+            "a3": "Mars",
+            "a4": "Pluto",
+            "correct": "Jupiter"
+        },{
+            "q": "What do letters in the the acronym SCUBA stand for?",
+            "a1": "Self-Contained Underwater Breathing Apparatus",
+            "a2": "Storage Container for Underwater Breathing Apparatus",
+            "a3": "Super Cool Underwater Breathing Apparatus",
+            "a4": "Storage Container Unit for Breathing Assistance",
+            "correct": "Self-Contained Underwater Breathing Apparatus"
+        },{
+            "q": "186,282 miles per second is the speed of what in a vacuum?",
+            "a1": "Light",
+            "a2": "Sound",
+            "a3": "Gravity",
+            "a4": "Antimatter",
+            "correct": "Light"
+        },{
+            "q": "What is the name for the unit of measurement of power that is roughly equal to 746 watts?",
+            "a1": "Joule",
+            "a2": "Horsepower",
+            "a3": "Newton",
+            "a4": "Megawatts",
+            "correct": "Horsepower"
+        },{
+            "q": "Which American inventor is generally given credit for the invention of the lightning rod?",
+            "a1": "Benjamin Franklin",
+            "a2": "Albert Einstein",
+            "a3": "Nikola Tesla",
+            "a4": "Stephan Hawkin",
+            "correct": "Benjamin Franklin"
+        },{
+            "q": "In humans, what is the only internal organ capable of regenerating lost tissue?",
+            "a1": "The Heart",
+            "a2": "The Liver",
+            "a3": "The Bladder",
+            "a4": "The Stomach",
+            "correct": "The Liver"
+        },{
+            "q": "The reaction where two atoms of hydrogen combine to form an atom of helium is called what?",
+            "a1": "Combination",
+            "a2": "Fusion",
+            "a3": "Cold Fusion",
+            "a4": "Combining",
+            "correct": "Fusion"
+        },{
+            "q": "What is the name for trees that never lose their leaves?",
+            "a1": "Evergreen",
+            "a2": "Neverfade",
+            "a3": "Forevergreen",
+            "a4": "Green",
+            "correct": "Evergreen"
+        },{
+            "q": "Approximately 2% of all people have what eye color?",
+            "a1": "Brown",
+            "a2": "Green",
+            "a3": "Blue",
+            "a4": "Red",
+            "correct": "Green"
+        },{
+            "q": "The atmospheric temperature at which water vapor begins to condense and form dew, is called what?",
+            "a1": "Dew Point",
+            "a2": "Freezing Point",
+            "a3": "Transion Point",
+            "a4": "Morning Point",
+            "correct": "Dew Point"
+        },{
+            "q": "In fluid dynamics, what is the term for the highest attainable speed an object can reach as it falls?",
+            "a1": "Terminal Velocity",
+            "a2": "Breaking Point",
+            "a3": "Escape Velocity",
+            "a4": "Freezing Point",
+            "correct": "Terminal Velocity"
+        },{
+            "q": "What is the unit of length that is approximately 3.26 light-years?",
+            "a1": "Kilometer",
+            "a2": "Petameter",
+            "a3": "Metric",
+            "a4": "Parsec",
+            "correct": "Parsec"
+        },{
+            "q": "Who came up with the theories of General and Special relativity?",
+            "a1": "Nikola Tesla",
+            "a2": "Albert Einstein",
+            "a3": "Isaac Newton",
+            "a4": "Benjamin Franklin",
+            "correct": "Albert Einstein"
+        },{
+            "q": "Bees must collect nectar from approximately how many flowers to make 1 pound of honeycomb?",
+            "a1": "10 Thousand",
+            "a2": "2 Million",
+            "a3": "20 Million",
+            "a4": "50 Million",
+            "correct": "20 Million"
+        },{
+            "q": "In which country was a method for making rust-resistant iron discovered in the fifth century B.C.?",
+            "a1": "Sumeria",
+            "a2": "Egypt",
+            "a3": "India",
+            "a4": "Babylon",
+            "correct": "India"
+        },{
+            "q": "Which prefix is often used with scientific terms to indicate that something is the same, equal or constant?",
+            "a1": "iso",
+            "a2": "mega",
+            "a3": "meta",
+            "a4": "quasi",
+            "correct": "iso"
+        },{
+            "q": "What is another name for the Paleolithic Age?",
+            "a1": "The stone age",
+            "a2": "The dark ages",
+            "a3": "Iron age",
+            "a4": "Middle ages",
+            "correct": "The stone age"
+        },{
+            "q": "What mammal lays eggs?",
+            "a1": "Bats",
+            "a2": "Platypus",
+            "a3": "Deer",
+            "a4": "Squirrel",
+            "correct": "Platypus"
+        },{
+            "q": "What invention in about 1450 A.D. revolutionized communication and the world?",
+            "a1": "The printing press",
+            "a2": "The Telephone",
+            "a3": "The post office",
+            "a4": "Computers",
+            "correct": "The printing press"
+        },{
+            "q": "As you go down into a well, your weight:",
+            "a1": "increases slightly",
+            "a2": "decreases slightly",
+            "a3": "remains exactly the same",
+            "a4": "I give up",
+            "correct": "decreases slightly"
+        },{
+            "q": "Which sea is the saltiest natural lake and is also at the lowest elevation on the face of the earth?",
+            "a1": "The Dead Sea",
+            "a2": "The North Sea",
+            "a3": "The Caribbean Sea",
+            "a4": "Arabian Sea",
+            "correct": "The Dead Sea"
+        },{
+            "q": "In what country do the greatest number of tornadoes occur?",
+            "a1": "USA",
+            "a2": "Canada",
+            "a3": "China",
+            "a4": "Russia",
+            "correct": "USA"
+        },{
+            "q": "What percent of fire-related deaths are due to smoke inhalation rather than burns?",
+            "a1": "10%",
+            "a2": "50%",
+            "a3": "80%",
+            "a4": "99%",
+            "correct": "80%"
+        },{
+            "q": "Multiple Choice: The fastest-running terrestrial animal is:",
+            "a1":"jaguar",
+            "a2": "man",
+            "a3": "lion",
+            "a4": "cheetah",
+            "correct": "cheetah"
         }
-    ],
-    "hard": [
-        {}
+        
     ]
 }
 
