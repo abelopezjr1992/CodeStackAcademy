@@ -94,7 +94,7 @@ function injectBegin(info) {
 
 function injectEnd(info) {
     display.innerHTML = info;
-    loadHTML("../html/gameEnd.html");
+    console.log("got here")
     let replay = document.getElementById('replay');
     let message = document.getElementById('message');
     let grade = document.getElementById('grade');
