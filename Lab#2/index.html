@@ -13,13 +13,14 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="bg">
 
     <!--bg-->
-    <div class="container-fluid bg">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <!--doit-->
+
                 <h1 class="doit">
                     DO IT!!
                 </h1>
@@ -28,32 +29,46 @@
         <!--display-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3"></div>
-                <!--list-->
-                <ul class="col-3" id="list">
-                    <li class="border">Hello World</li>
-
-                </ul>
-
-                <!--textArea & saveList -->
                 <div class="col-3">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="textArea">Create List Name:</label>
-                            <textarea class="form-control" id="textArea" rows="3"></textarea>
+                    <img class="imgTop" src="./images/Top Image1.png">
+                    <img class="imgBot" src="images/Bottom Image1.png">
+                </div>
+                <!--list-->
+                <div class="col-6">
+                    <div class="row">
+
+
+                        <!--textArea & saveList -->
+                        <div class="col-12 ">
+                            <div class="form-group">
+                                <label for="textArea" class="text1">Create List Name:</label>
+                                <textarea class="form-control" id="textArea" rows="3"></textarea>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-12">
-                        <button type="button" class="btn btn-dark" id="createBtn">Create List</button>
-                    </div>
+                        <div class="col-6 p-3  d-flex justify-content-center">
+                            <button type="button" class="btn btn-dark blackBtn" id="createBtn">Create List</button>
+                        </div>
 
-                    <div class="col-12">
-                        <button type="button" class="btn btn-dark" id="clearBtn">Clear Lists</button>
+                     <!--   <div class="col-4 p-3  d-flex justify-content-center">
+                            <button type="button" class="btn btn-dark blackBtn" id="saveBtn">Save List</button>
+                        </div>-->
+
+                        <div class="col-6 p-3  d-flex justify-content-center">
+                            <button type="button" class="btn btn-dark blackBtn" id="clearBtn">Clear Lists</button>
+                        </div>
+
+                        <ul class="col-12" id="list">
+                            <li class="border">Hello World</li>
+                        </ul>
+
                     </div>
 
                 </div>
-                <div class="col-3"></div>
+                <div class="col-3">
+                    <img class="imgTop2" src="./images/Top Image2.png">
+                    <img class="imgBot2" src="images/Bottom Image2.png">
+                </div>
             </div>
 
         </div>
