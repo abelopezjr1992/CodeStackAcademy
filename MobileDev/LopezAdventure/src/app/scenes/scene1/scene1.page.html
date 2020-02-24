@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Scene 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>{{displayScene.scene}}</h2>
+  <hr>
+
+  <ion-button (click)='nextscene(displayScene.Result1)' color="medium"> {{displayScene.choice1}}</ion-button>
+  <ion-button (click)='nextscene(displayScene.Result2)' color="medium"> {{displayScene.choice2}}</ion-button>
+</ion-content>
