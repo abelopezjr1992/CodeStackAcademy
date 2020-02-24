@@ -16,16 +16,15 @@ export class Scene1Page implements OnInit {
 
   ngOnInit() {
     //getting the first scene
-    this.nextScene(0);
-    console.log(this.displayScene);
+    this.displayScene = this.dServe.getFirstScene(0);
   }
 
   nextScene(id: number) {
     console.log(id)
-    if(this.displayScene.ending===true){
+    if (this.displayScene.ending == true) {
       //ending stuff
     } else {
-      this.displayScene =this.dServe.getScene(id);
+      this.displayScene = this.dServe.getNextScene(id-1);
     }
   }
 }

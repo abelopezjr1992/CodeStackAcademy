@@ -1,13 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Scene 1</ion-title>
+    <ion-title>Scene {{displayScene.id}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h2>{{displayScene.scene}}</h2>
-  <hr>
+  <div class="container">
+    <h3>{{displayScene.scene}}</h3>
+    <ion-button (click)='nextScene(displayScene.result1)' color="dark">{{displayScene.option1}}</ion-button>
 
-  <ion-button (click)='nextscene(displayScene.Result1)' color="medium"> {{displayScene.choice1}}</ion-button>
-  <ion-button (click)='nextscene(displayScene.Result2)' color="medium"> {{displayScene.choice2}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.result2)' color="dark">{{displayScene.option2}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.result3)' color="dark">{{displayScene.option3}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.resultS)' color="dark">{{displayScene.optionS}}</ion-button>
+
+  </div>
+
 </ion-content>
