@@ -1,0 +1,76 @@
+<div *ngIf="folder == 'Inbox'; else elseBlock">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>BARTAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Bart</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div class="container ion-text-center">
+
+      <h2> Welcome to my Bart App</h2>
+      <h5> Hope you find this usefull!</h5>
+      <ion-img src="assets/system-map-weekday.png"></ion-img>
+    </div>
+    
+    
+
+
+
+  </ion-content>
+</div>
+
+<ng-template #elseBlock>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">{{station?.name}}</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{locationInfo?.city}}
+        </ion-card-subtitle>
+        <ion-card-title >{{locationInfo?.address}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+    <div *ngFor="let d of station?.etd">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{d?.direction}}</ion-card-subtitle>
+          <ion-card-title>{{d?.destination}}</ion-card-title>
+        </ion-card-header>
+        
+        <ion-card-content>
+          <div *ngFor="let e of d.estimate">
+            <p>Minutes till arrival: {{e?.minutes}} </p>
+            <p>Platform # {{e?.platform}}</p>
+            <hr>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+</ng-template>
