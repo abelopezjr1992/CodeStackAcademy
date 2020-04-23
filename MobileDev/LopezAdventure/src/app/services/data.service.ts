@@ -6,10 +6,12 @@ import { Scene } from '../interfaces/scene';
   providedIn: 'root'
 })
 export class DataService {
-  private url = 'https://spreadsheets.google.com/feeds/list/16l4NPqMNOoymV0hcsX8fkx7Gd2-XTeUIuadaK3qVL8Q/1/public/full?alt=json';
+  //Previous url for old project.
+  //private url = 'https://spreadsheets.google.com/feeds/list/16l4NPqMNOoymV0hcsX8fkx7Gd2-XTeUIuadaK3qVL8Q/1/public/full?alt=json';
+  private url = 'https://spreadsheets.google.com/feeds/list/1YKM2iHaQHM0xmlEj-kQ6vLGu8FM0bKW_zKiCzWPqHIY/1/public/full?alt=json'
   private googleSheet;
-  private scenes: Scene[] = [];
-
+  public scenes: Scene[] = [];
+  private health: number = 0;
   constructor(private http: HttpClient) {
     this.parseData();
   }
@@ -33,7 +35,13 @@ export class DataService {
             result2: s.gsx$result2.$t,
             result3: s.gsx$result3.$t,
             resultS: s.gsx$specialresult.$t,
-            ending: s.gsx$ending.$t as boolean
+            item1: s.gsx$inventory1.$t,
+            item2: s.gsx$inventory2.$t,
+            item3: s.gsx$inventory3.$t,
+            item4: s.gsx$inventory4.$t,
+            archerHealth: s.gsx$archerlp.$t,
+            rougeHealth: s.gsx$roguelp.$t,
+            warriorHealth: s.gsx$warriorlp.$t,
           };
           this.scenes.push(info);
         }
@@ -47,6 +55,7 @@ export class DataService {
   getNextScene(id: number): Scene {
     //might have to minus one to start
     return this.scenes[id];
+    
   }
 
   getFirstScene(id: number): Scene {

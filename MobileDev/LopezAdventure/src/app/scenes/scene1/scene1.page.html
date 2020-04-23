@@ -1,18 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Scene {{displayScene.id}}</ion-title>
+    <ion-title>Scene {{sceneCount}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="container">
+    <h4>Health: {{health}}</h4>
     <h3>{{displayScene.scene}}</h3>
-    <ion-button (click)='nextScene(displayScene.result1)' color="dark">{{displayScene.option1}}</ion-button>
 
-    <ion-button  (click)='nextScene(displayScene.result2)' color="dark">{{displayScene.option2}}</ion-button>
-    <ion-button  (click)='nextScene(displayScene.result3)' color="dark">{{displayScene.option3}}</ion-button>
-    <ion-button  (click)='nextScene(displayScene.resultS)' color="dark">{{displayScene.optionS}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.result1, 1)' color="dark" *ngIf='displayScene.option1 != "NA"'>
+      {{displayScene.option1}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.result2, 2)' color="dark" *ngIf='displayScene.option2 != "NA"'>
+      {{displayScene.option2}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.result3, 3)' color="dark" *ngIf='displayScene.option3 != "NA"'>
+      {{displayScene.option3}}</ion-button>
+    <ion-button (click)='nextScene(displayScene.resultS, 0)' color="dark" *ngIf='displayScene.optionS != "NA"'>
+      {{displayScene.optionS}}</ion-button>
 
+      <!-- ng-if='results.dataType === "textTable"' -->
   </div>
 
 </ion-content>
