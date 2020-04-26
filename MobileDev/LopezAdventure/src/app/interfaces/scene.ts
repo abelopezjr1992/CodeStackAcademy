@@ -13,7 +13,9 @@ export interface Scene {
     item2: string;
     item3: string;
     item4: string;
-    archerHealth: number;
-    rougeHealth: number;
-    warriorHealth: number;
+    healthChange: number;
+    requiredItem1: string;
+    requiredItem2: string;
+    requiredItem3: string;
+    requiredItem4: string;
 }

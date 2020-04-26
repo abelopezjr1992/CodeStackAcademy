@@ -14,6 +14,9 @@ export class Scene1Page implements OnInit {
   health: number = 0;
   healthChange: number = 0;
   runOnce: boolean = true;
+  inventory = [];
+
+
 
   constructor(private dServe: DataService) {
   }
@@ -24,11 +27,54 @@ export class Scene1Page implements OnInit {
   }
 
   nextScene(id: number, classNum: number) {
-    
-    
-    this.displayScene = this.dServe.getNextScene(id - 1);
+    id=id-1;
+    this.displayScene = this.dServe.getNextScene(id);
     this.sceneCount = this.sceneCount + 1;
-    
+    this.checkInventory(id, classNum);
+    this.changeHealth(id, classNum);
+
+    //console.log(id)
+    //console.log(this.runOnce);
+    //console.log("health change is" + this.dServe.scenes[id - 1].healthChange);
+  }
+
+  checkInventory(id, classNum) {
+    //-----------------------This checks if item will be added depending on classnum---------------//
+    console.log(id, classNum)
+    if (this.dServe.scenes[id].item1 != "NA" && classNum == 1) {
+      this.inventory.push(this.dServe.scenes[id].item1);
+    }
+    if (this.dServe.scenes[id].item2 != "NA" && classNum == 2) {
+      this.inventory.push(this.dServe.scenes[id].item2);
+    }
+    if (this.dServe.scenes[id].item3 != "NA" && classNum == 3) {
+      this.inventory.push(this.dServe.scenes[id].item3);
+    }
+    if (this.dServe.scenes[id].item4 != "NA" && classNum == 0) {
+      this.inventory.push(this.dServe.scenes[id].item4);
+    }
+    console.log(this.inventory);
+
+    //-------------------------------This checks scenes if item is required---------------------//
+    if (this.dServe.scenes[id].requiredItem1 == "NA") {
+
+    }
+    else if (this.inventory.includes(this.dServe.scenes[id].requiredItem1)) {
+
+    }
+    if (this.dServe.scenes[id].requiredItem2 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem2)) {
+
+    }
+    if (this.dServe.scenes[id].requiredItem3 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem3)) {
+
+    }
+    if (this.dServe.scenes[id].requiredItem4 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem4)) {
+
+    }
+  }
+
+  changeHealth(id: number, classNum: number) {
+
     if (this.runOnce == true) {
       if (classNum == 1) {
         this.health = 8;
@@ -36,7 +82,7 @@ export class Scene1Page implements OnInit {
       } else if (classNum == 2) {
         this.health = 10;
         console.log("Rogue Health set");
-        
+
       } else {
         this.health = 12;
         console.log("Warrior Health set");
@@ -44,12 +90,7 @@ export class Scene1Page implements OnInit {
       this.runOnce = false;
     }
     else {
-      this.health = this.health + Number(this.dServe.scenes[id - 1].archerHealth);
+      this.health = this.health + Number(this.dServe.scenes[id - 1].healthChange);
     }
-
-    console.log(id)
-    console.log(this.runOnce);
-    console.log("health change is" + this.dServe.scenes[id - 1].archerHealth);
-    console.log("health is" + this.health);
   }
 }
