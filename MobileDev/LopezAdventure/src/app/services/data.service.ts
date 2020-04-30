@@ -9,6 +9,7 @@ import { items } from '../interfaces/items';
 export class DataService {
   //Previous url for old project.
   //private url = 'https://spreadsheets.google.com/feeds/list/16l4NPqMNOoymV0hcsX8fkx7Gd2-XTeUIuadaK3qVL8Q/1/public/full?alt=json';
+  sqlurl=' localhost:'
   private url = 'https://spreadsheets.google.com/feeds/list/1YKM2iHaQHM0xmlEj-kQ6vLGu8FM0bKW_zKiCzWPqHIY/1/public/full?alt=json';
   private itemsURL= 'https://spreadsheets.google.com/feeds/list/1YKM2iHaQHM0xmlEj-kQ6vLGu8FM0bKW_zKiCzWPqHIY/3/public/full?alt=json';
   private googleSheet;
@@ -76,6 +77,10 @@ export class DataService {
         //console.log(this.items);
       }
     );
+  }
+
+  GetSQLData(){
+    return this.http.get(this.url);
   }
 
   //Gets Next Scene by value being passed

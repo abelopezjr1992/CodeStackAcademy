@@ -10,11 +10,10 @@ using Microsoft.Extensions.Logging;
 namespace LopezAdventureGame.Controllers {
     [ApiController]
     [Route ("Controller")]
-    public class loginInfoController : ControllerBase {
-
+    public class InventoryController : ControllerBase {
         readonly DataServiceSql _dataFromSql;
 
-        public loginInfoController (DataServiceSql fixedData) {
+        public InventoryController (DataServiceSql fixedData) {
             _dataFromSql = fixedData;
         }
 

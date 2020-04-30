@@ -8,6 +8,8 @@ namespace LopezAdventureGame.Services.Context {
 
         public DbSet<savedData> savedDataSQL { get; set; }
 
+        public DbSet<Inventory> InventoryDataSQL { get; set; }
+
         public dataContext (DbContextOptions<dataContext> options) : base (options) {
 
         }
@@ -53,9 +55,24 @@ namespace LopezAdventureGame.Services.Context {
                 health = 0
                 }
             };
+            var inventory = new List<Inventory> () {
+                new Inventory {
+
+                ID = 1,
+                Username = "Abe",
+                Inventory1 = "Item01",
+                Inventory2 = "Item02",
+                Inventory3 = "Item03",
+                Inventory4 = "Item04",
+                Inventory5 = "Item05",
+                Inventory6 = "Item06"
+                }
+
+            };
+            
             builder.Entity<loginPlayer> ().HasData (fixedData);
             builder.Entity<savedData> ().HasData (fixedData2);
-
+            builder.Entity<Inventory> ().HasData (inventory);
         }
     }
 }

@@ -27,9 +27,9 @@ namespace LopezAdventureGame.Models {
         public savedData () {
 
         }
-        public savedData (string Username, string ID, int sceneid, string scene, string option2, string option1, string option3, string optionS, string result1, string result2, string result3, string resultS, string item1, string item2, string item3, string item4, int healthChange, string requiredItem1, string requiredItem2, string requiredItem3, string requiredItem4, int health) {
-            this.Username= this.Username;
+        public savedData (string Username, int ID, int sceneid, string scene, string option2, string option1, string option3, string optionS, string result1, string result2, string result3, string resultS, string item1, string item2, string item3, string item4, int healthChange, string requiredItem1, string requiredItem2, string requiredItem3, string requiredItem4, int health) {
             this.ID= this.ID;
+            this.Username= this.Username;
             this.sceneid = this.sceneid;
             this.scene = this.scene;
             this.option1 = this.option1;
