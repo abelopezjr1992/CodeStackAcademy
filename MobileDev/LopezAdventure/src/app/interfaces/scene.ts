@@ -1,5 +1,5 @@
 export interface Scene {
-    id: number;
+    sceneid: number;
     scene: string;
     option1: string;
     option2: string;

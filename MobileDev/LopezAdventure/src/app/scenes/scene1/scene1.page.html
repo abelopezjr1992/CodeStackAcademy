@@ -9,16 +9,23 @@
     <h4>Health: {{health}}</h4>
     <h3>{{displayScene.scene}}</h3>
 
-    <ion-button (click)='nextScene(displayScene.result1, 1)' color="dark" *ngIf='displayScene.option1 != "NA"'>
+    <ion-button (click)="addItem(1)" (click)='nextScene(displayScene.result1, 1)' color="dark"
+      *ngIf='displayScene.option1 != "NA"'>
       {{displayScene.option1}}</ion-button>
-    <ion-button (click)='nextScene(displayScene.result2, 2)' color="dark" *ngIf='displayScene.option2 != "NA"'>
+
+    <ion-button (click)="addItem(2)" (click)='nextScene(displayScene.result2, 2)' color="dark"
+      *ngIf='displayScene.option2 != "NA"'>
       {{displayScene.option2}}</ion-button>
-    <ion-button (click)='nextScene(displayScene.result3, 3)' color="dark" *ngIf='displayScene.option3 != "NA"'>
+
+    <ion-button (click)="addItem(3)" (click)='nextScene(displayScene.result3, 3)' color="dark"
+      *ngIf='displayScene.option3 != "NA"'>
       {{displayScene.option3}}</ion-button>
-    <ion-button (click)='nextScene(displayScene.resultS, 0)' color="dark" *ngIf='displayScene.optionS != "NA"'>
+
+    <ion-button (click)="addItem(0)" (click)='nextScene(displayScene.resultS, 0)' color="dark"
+      *ngIf='displayScene.optionS != "NA"'>
       {{displayScene.optionS}}</ion-button>
 
-      <!-- ng-if='results.dataType === "textTable"' -->
+    <!-- ng-if='results.dataType === "textTable"' -->
   </div>
 
 </ion-content>

@@ -10,6 +10,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class Scene1Page implements OnInit {
   displayScene: Scene;
+  resultScene: Scene;
   sceneCount: number = 0;
   health: number = 0;
   healthChange: number = 0;
@@ -24,53 +25,69 @@ export class Scene1Page implements OnInit {
   ngOnInit() {
     //getting the first scene
     this.displayScene = this.dServe.getFirstScene(0);
+    console.log(this.dServe.items);
+    console.log(this.dServe.scenes);
+    console.log(this.displayScene);
   }
 
   nextScene(id: number, classNum: number) {
-    id=id-1;
+    id = id - 1;
     this.displayScene = this.dServe.getNextScene(id);
+    this.resultScene = this.dServe.getNextScene(id - 1);
     this.sceneCount = this.sceneCount + 1;
-    this.checkInventory(id, classNum);
     this.changeHealth(id, classNum);
-
-    //console.log(id)
-    //console.log(this.runOnce);
-    //console.log("health change is" + this.dServe.scenes[id - 1].healthChange);
+    this.checkInventory();
   }
 
-  checkInventory(id, classNum) {
+  addItem(classNum) {
+    //console.log(classNum);
+    //console.log(this.displayScene.sceneid, this.displayScene.item1, this.displayScene.item2, this.displayScene.item3, this.displayScene.item4);
     //-----------------------This checks if item will be added depending on classnum---------------//
-    console.log(id, classNum)
-    if (this.dServe.scenes[id].item1 != "NA" && classNum == 1) {
-      this.inventory.push(this.dServe.scenes[id].item1);
+    if (classNum == 1 && this.displayScene.item1 != "NA") {
+      //console.log("Added Item1");
+      this.inventory.push((this.displayScene.item1));
     }
-    if (this.dServe.scenes[id].item2 != "NA" && classNum == 2) {
-      this.inventory.push(this.dServe.scenes[id].item2);
+    else if (classNum == 2 && this.displayScene.item2 != "NA") {
+      //console.log("Added Item2");
+      this.inventory.push(this.displayScene.item2);
     }
-    if (this.dServe.scenes[id].item3 != "NA" && classNum == 3) {
-      this.inventory.push(this.dServe.scenes[id].item3);
+    else if (classNum == 3 && this.displayScene.item3 != "NA") {
+      //console.log("Added Item3");
+      this.inventory.push(this.displayScene.item3);
     }
-    if (this.dServe.scenes[id].item4 != "NA" && classNum == 0) {
-      this.inventory.push(this.dServe.scenes[id].item4);
+    else if (classNum == 0 && this.displayScene.item4 != "NA") {
+      //console.log("Added Item4");
+      this.inventory.push(this.displayScene.item4);
     }
     console.log(this.inventory);
+  }
 
+  checkInventory() {
     //-------------------------------This checks scenes if item is required---------------------//
-    if (this.dServe.scenes[id].requiredItem1 == "NA") {
+    //console.log(this.displayScene.requiredItem1);
+    //console.log(this.inventory.find(x => x.requireditem1 == this.displayScene.requiredItem1));
 
+    if (this.displayScene.requiredItem1 != "NA" && this.inventory.includes(this.displayScene.requiredItem1) != true) {
+      this.displayScene.option1 = "NA";
+      console.log(this.displayScene.requiredItem1 + " was not found");
     }
-    else if (this.inventory.includes(this.dServe.scenes[id].requiredItem1)) {
+    if (this.displayScene.requiredItem2 != "NA" && this.inventory.includes(this.displayScene.requiredItem2) != true) {
+      this.displayScene.option2 = "NA";
+      console.log(this.displayScene.requiredItem2 + " was not found");
+    }
+    if (this.displayScene.requiredItem3 != "NA" && this.inventory.includes(this.displayScene.requiredItem3) != true) {
+      this.displayScene.option3 = "NA";
+      console.log(this.displayScene.requiredItem3 + " was not found")
+    }
+    if (this.displayScene.requiredItem4 != "NA" && this.inventory.includes(this.displayScene.requiredItem4) != true) {
+      this.displayScene.optionS = "NA";
+      console.log(this.displayScene.requiredItem4 + " was not found")
+    }
+    // if (this.displayScene.requiredItem1 != "NA" && this.inventory.find(x => x.requireditem1 == this.displayScene.requiredItem1) != true) {
+    //   this.displayScene.option1 = "NA";
+    //   console.log(this.displayScene.requiredItem1 + " was not found")
+    // }
 
-    }
-    if (this.dServe.scenes[id].requiredItem2 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem2)) {
-
-    }
-    if (this.dServe.scenes[id].requiredItem3 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem3)) {
-
-    }
-    if (this.dServe.scenes[id].requiredItem4 != "NA" && this.inventory.includes(this.dServe.scenes[id].requiredItem4)) {
-
-    }
   }
 
   changeHealth(id: number, classNum: number) {

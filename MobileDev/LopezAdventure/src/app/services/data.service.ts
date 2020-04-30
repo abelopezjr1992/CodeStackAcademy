@@ -30,7 +30,7 @@ export class DataService {
         console.log(x)
         for (let s of x.feed.entry) {
           let info: Scene = {
-            id: s.gsx$id.$t as number,
+            sceneid: s.gsx$id.$t as number,
             scene: s.gsx$scene.$t,
             option1: s.gsx$option1.$t,
             option2: s.gsx$option2.$t,
@@ -52,7 +52,7 @@ export class DataService {
           };
           this.scenes.push(info);
         }
-       console.log(this.scenes);
+       //console.log(this.scenes);
       }
     );
 
@@ -73,7 +73,7 @@ export class DataService {
           };
           this.items.push(info2);
         }
-        console.log(this.items);
+        //console.log(this.items);
       }
     );
   }
