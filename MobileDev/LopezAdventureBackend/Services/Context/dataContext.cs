@@ -57,7 +57,6 @@ namespace LopezAdventureBackend.Services.Context {
             };
             var inventory = new List<Inventory> () {
                 new Inventory {
-
                 ID = 1,
                 Username = "Abe",
                 Inventory1 = "Item01",
@@ -67,9 +66,7 @@ namespace LopezAdventureBackend.Services.Context {
                 Inventory5 = "Item05",
                 Inventory6 = "Item06"
                 }
-
             };
-            
             builder.Entity<loginPlayer> ().HasData (fixedData);
             builder.Entity<savedData> ().HasData (fixedData2);
             builder.Entity<Inventory> ().HasData (inventory);
