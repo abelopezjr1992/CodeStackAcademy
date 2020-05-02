@@ -1,9 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>scene2</ion-title>
+    <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <ion-col size="12" size-lg class="ion-padding-top">
+        <label for="username">User Name</label>
+      </ion-col>
+      <ion-col size="6" size-lg>
+        <input #un type="text" id="username" formControlName="username" class="form-control" />
+      </ion-col>
+      <ion-col size="12" size-lg class="ion-padding-top">
+        <small class="text-danger" *ngIf="username.invalid">Username is required</small>
+      </ion-col>
+    </div>
+    <div class="form-row">
+      <div class="form-group col">
+        <ion-col size="12" size-lg class="ion-padding-top">
+          <label for="password">Password</label>
+        </ion-col>
+        <ion-col size="12" size-lg class="ion-padding-top">
+          <input type="password" id="password" formControlName="password" class="form-control" />
+        </ion-col>
+        <ion-col size="12" size-lg class="ion-padding-top">
+          <div *ngIf="password.invalid">
+            <p>
+              Password is required
+            </p>
+          </div>
+        </ion-col>
+        <ion-col size="12" size-lg class="ion-padding-top">
+          <div *ngIf="password.errors?.minlength">
+            <p>
+              Password must be at least 4 characters
+            </p>
+          </div>
+        </ion-col>
+      </div>
+    </div>
+    <div class="text-center">
+      <ion-col size="12" size-lg class="ion-padding-top">
+        <button class="btn btn-primary mr-1">Login</button>
+
+      </ion-col>
+
+    </div>
+  </form>
 </ion-content>

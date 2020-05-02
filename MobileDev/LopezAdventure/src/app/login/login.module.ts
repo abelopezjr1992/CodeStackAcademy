@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Scene2PageRoutingModule } from './scene2-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { Scene2Page } from './scene2.page';
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { Scene2Page } from './scene2.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    Scene2PageRoutingModule
+    LoginPageRoutingModule
   ],
-  declarations: [Scene2Page]
+  declarations: [LoginPage]
 })
-export class Scene2PageModule {}
+export class LoginPageModule {}

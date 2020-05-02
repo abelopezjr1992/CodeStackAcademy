@@ -11,31 +11,32 @@ namespace LopezAdventureBackend.Controllers {
     [ApiController]
     [Route ("[controller]")]
     public class InventoryController : ControllerBase {
-        // readonly DataServiceSql _dataFromSql;
+        readonly DataServiceSql _dataFromSql;
 
-        // public InventoryController (DataServiceSql fixedData) {
-        //     _dataFromSql = fixedData;
-        // }
+        public InventoryController (DataServiceSql fixedData) {
+            _dataFromSql = fixedData;
+        }
 
-        // [HttpGet]
-        // public IEnumerable<loginPlayer> GetUserInfo () {
-        //     return _dataFromSql.GetUser ();
-        // }
+        [HttpGet]
+        public IEnumerable<Inventory> GetInventories () {
+            return _dataFromSql.GetItems ();
+        }
 
-        // [HttpGet ("username")]
-        // public IEnumerable<loginPlayer> GetSavedData (string username) {
-        //     return _dataFromSql.GetSavedData (username);
-        // }
+        [HttpGet("{userName}")]
+        public IEnumerable<Inventory> getInventoryByName(string userName)
+        {
+            return _dataFromSql.getByName(userName);
+        }
 
-        // [HttpPost ("add")]
-        // public bool AddUser (loginPlayer users) {
-        //     List<loginPlayer> Info = new List<loginPlayer> (_dataFromSql.GetUser ());
-        //     foreach (var item in Info) {
-        //         if (users.Username == item.Username) {
-        //             return false;
-        //         }
-        //     }
-        //     return _dataFromSql.InsertUser (users);
-        // }
+        [HttpPost ("add")]
+        public bool AddItems (Inventory items) {
+            //List<Inventory> Info = new List<Inventory> (_dataFromSql.GetItems ());
+            return _dataFromSql.InsertItems(items);
+        }
+
+        [HttpDelete ("{Username}")]
+        public bool DeleteInventory (string Username) {
+            return _dataFromSql.DeleteInventoryByUserName (Username);
+        }
     }
 }

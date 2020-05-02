@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Scene } from 'src/app/interfaces/scene';
 import { DataService } from 'src/app/services/data.service';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,11 +18,39 @@ export class Scene1Page implements OnInit {
   healthChange: number = 0;
   runOnce: boolean = true;
   inventory = [];
+  public userName;
+
+  public saveData = this.dServe.apiURL + "savedData/add";
+  public saveInventory = this.dServe.apiURL + "inventory/add";
+  public deleteSaveData = this.dServe.apiURL + 'savedData/' + this.userName;
+  public deleteInventory = this.dServe.apiURL + 'inventory/' + this.userName;
 
 
-
-  constructor(private dServe: DataService) {
+  constructor(private dServe: DataService, private http: HttpClient, private router: Router) {
   }
+
+  addItems(Inventory) {
+    this.http.post(this.saveInventory, Inventory).subscribe(data => {
+      console.log(data);
+    });
+  };
+
+  addSavedData(saveFile) {
+    this.http.post(this.saveData, saveFile).subscribe(data => {
+      console.log(data);
+    });
+  };
+
+  deleteItems() {
+    this.http.delete(this.deleteInventory).subscribe(data => {
+    })
+  };
+
+  deleteSave() {
+    this.http.delete(this.deleteSaveData).subscribe(data => {
+    })
+  };
+
 
   ngOnInit() {
     //getting the first scene
@@ -108,6 +138,11 @@ export class Scene1Page implements OnInit {
     }
     else {
       this.health = this.health + Number(this.dServe.scenes[id - 1].healthChange);
+      if (this.health == 0) {
+        alert("You have Perished in combat.");
+        this.deleteSave();
+        this.deleteItems();
+      }
     }
   }
 }

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="userForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input #un type="text" id="username" formControlName="username" class="form-control" />
+      <small class="text-danger" *ngIf="username.invalid">Username is required</small>
+    </div>
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-control" />
+        <div *ngIf="password.invalid">Password is required</div>
+        <div *ngIf="password.errors?.minlength">Password must be at least 4 characters</div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary mr-1" >Login</button>
+    </div>
+  </form>
+</ion-content>
